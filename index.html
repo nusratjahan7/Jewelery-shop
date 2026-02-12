@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+     <link rel="stylesheet" href="./tailwind.css">
+
+    <title>APOLLONIAN</title>
+</head>
+<body class="p-0 m-0 box-border">
+    <!-- header section -->
+     <header class="fixed top-0 left-0 right-0 py-5 px-4 md:px-0 ">
+        <nav class="header container mx-auto  hidden lg:flex justify-between items-center">
+            <!-- menu  -->
+            <div class="flex justify-between">
+            <span class="text-[#000000ab] mr-5"><i class="fa-solid fa-location-dot"></i></span>
+            <a href="#" class="text-[#000000ab] mr-5 font-karla text-xl">JEWELRY</a>
+            <a href="#" class="text-[#000000ab] mr-5 font-karla text-xl">NEW RELEASES</a>
+            <a href="#" class="text-[#000000ab] font-karla text-xl">GIFTS</a>
+            </div>
+            <!-- logo -->
+            <div>
+                <h1 class="text-2xl tracking-widest font-cormorant font-bold">APOLLONIAN</h1>
+            </div>
+            <!-- icons  -->
+            <div class="flex justify-between">
+                <div class="flex mr-5">
+                <input type="text" name="" id="" placeholder="Search" class=" p-1.5  border-b border-[#00000025]">
+                <span class="text-[#000000ab]">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                </div>
+                <span class="text-[#000000ab] font-karla text-xl mr-5"><i class="fa-regular fa-heart"></i></span>
+                <span  class="text-[#000000ab] font-karla text-xl mr-5"><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="text-[#000000ab] font-karla text-xl"><i class="fa-solid fa-user"></i></span>
+            </div>
+        </nav>
+        <!-- 2nd nav for small device -->
+        <nav class=" flex lg:hidden justify-between px-7">
+            <!-- logo -->
+             <div>
+                <h1 class="text-2xl tracking-widest font-cormorant font-bold">APOLLONIAN</h1>
+            </div>
+            <div class=" relative group flex justify-between pb-16">
+            <!-- icons -->
+             <div class="hidden sm:flex mr-7 mt-1.5 ">
+                <span class="text-[#000000ab] font-karla text-xl mr-5"><i class="fa-regular fa-heart"></i></span>
+                <span  class="text-[#000000ab] font-karla text-xl mr-5"><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="text-[#000000ab] font-karla text-xl"><i class="fa-solid fa-user"></i></span>
+             </div>
+        
+            <!-- Button -->
+             <div class="text-3xl flex items-center justify-center cursor-pointer transition duration-300 shadow-lg shadow-black-400/50 group-hover:rotate-90 group-hover:scale-110 text-[#000000ab]">☰</div>
+             <!-- Menu -->
+              <ul class="font-karla absolute top-14 left-1/2 -translate-x-1/2  pointer-events-none transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto">
+                <li class="my-2 transform -translate-y-3 transition duration-300 group-hover:translate-y-0"><a href="#" class="block w-36 py-2 text-center rounded-full bg-[#000000ab] text-white transition">HOME</a></li>
+                <li class="my-2 transform -translate-y-3 transition duration-300 group-hover:translate-y-0  delay-75"><a href="#"class="block w-36 py-2 text-center rounded-full bg-[#000000ab] text-white transition">JEWELRY</a></li>
+                <li class="my-2 transform -translate-y-3 transition duration-150 group-hover:translate-y-0  delay-75"><a href="#"class="block w-36 py-2 text-center rounded-full bg-[#000000ab] text-white transition">NEW RELEASES</a></li>
+                <li class="my-2 transform -translate-y-3 transition duration-300 group-hover:translate-y-0  delay-200"><a href="#"class="block w-36 py-2 text-center rounded-full bg-[#000000ab] text-white transition">GIFTS</a></li>
+              </ul>
+             
+             </div>
+        </nav>
+     </header>
+     <!-- banner section  -->
+      <section class="mt-20 bg-[url(./images/banner.png)] bg-cover bg-center flex justify-center items-center min-h-screen w-full">
+        <div class="container mx-auto text-left px-4 md:px-0 text-white space-y-8">
+        <h2 class="text-6xl font-cormorant">The Autumn Equinox</h2>
+        <p class="font-karla ">Fall has arrived. <br> Shop for our new releases starting today.</p>
+        <button class="font-karla border px-3 py-2 text-[#beb6b6]">SHOP NOW</button>
+        
+        </div>
+      </section>
+</body>
+</html>
